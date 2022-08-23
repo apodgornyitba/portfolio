@@ -7,6 +7,7 @@ import {
     AppBar, MenuList, MenuItem, Toolbar, Typography, Box, Button, Popper, Grow, Paper, ClickAwayListener,
 } from "@mui/material";
 
+
 function MyMenuList() {
     const [open, setOpen] = React.useState(false);
     const anchorRef = React.useRef(null);
@@ -42,7 +43,7 @@ function MyMenuList() {
     }, [open]);
 
     return (
-        <div >
+        <div>
             <Button
                 ref={anchorRef}
                 id="composition-button"
@@ -52,7 +53,7 @@ function MyMenuList() {
                 style={{alignSelf: "center", color: "inherit"}}
                 onClick={handleToggle}
             >
-                <Typography> Projects </Typography>
+                <Typography fontFamily='N27'> Projects </Typography>
             </Button>
             <Popper
                 open={open}
@@ -78,7 +79,7 @@ function MyMenuList() {
                                     aria-labelledby="composition-button"
                                     onKeyDown={handleListKeyDown}
                                 >
-                                    <MenuItem onClick={handleClose}>ARV Web</MenuItem>
+                                    <MenuItem onClick={handleClose} fontFamily='N27'>ARV Web</MenuItem>
                                 </MenuList>
                             </ClickAwayListener>
                         </Paper>
@@ -96,9 +97,11 @@ class HeaderBar extends React.Component<> {
     render() {
 
         return (
-            <AppBar position="static"
-                    color="transparent"
-                    sx={{boxShadow: 0, borderBottom: 1}}
+            <AppBar
+                className="app-header"
+                position="static"
+                color="transparent"
+                sx={{boxShadow: 0, borderBottom: 1}}
             >
                 <Toolbar>
                     <Box sx={{display: {xs: 'flex'}}}>
@@ -106,7 +109,7 @@ class HeaderBar extends React.Component<> {
                             <img src={logo} style={{maxHeight: 95, marginLeft: -20}} alt={logo}/>
                         </Link>
                         <Typography
-                            type="title"
+                            fontFamily='N27'
                             color="inherit"
                             alignSelf={"center"}
                         >
@@ -118,24 +121,24 @@ class HeaderBar extends React.Component<> {
                             <MenuItem
                                 sx={{mr: 5}}
                             >
-                                <Typography> HOME </Typography>
+                                <Typography fontFamily='N27'> HOME </Typography>
                             </MenuItem>
                         </Link>
                         <Link to={"/about"} style={{textDecoration: 'none', color: "inherit"}}>
                             <MenuItem
                                 sx={{mr: 5}}
                             >
-                                <Typography> ABOUT</Typography>
+                                <Typography fontFamily='N27'> ABOUT</Typography>
                             </MenuItem>
                         </Link>
                         <Link to={"/about"} style={{textDecoration: 'none', color: "inherit"}}>
                             <MenuItem
                                 sx={{mr: 5}}
                             >
-                                <Typography> CONTACT</Typography>
+                                <Typography fontFamily='N27'> CONTACT</Typography>
                             </MenuItem>
                         </Link>
-                        <MyMenuList />
+                        <MyMenuList/>
                     </Box>
                 </Toolbar>
             </AppBar>);
