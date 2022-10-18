@@ -1,0 +1,47 @@
+.firstHalf{
+    text-align: center;
+    min-height: 340px;
+    max-height: 50%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(at bottom right, #e2dad7 0, #e2dad7 10px, rgba(226,218,215,0.2) 10px, rgba(226,218,215,0.2) 20px, rgba(226,218,215,0.75) 20px, rgba(226,218,215,0.75) 30px, rgba(226,218,215,0.25) 30px, rgba(226,218,215,0.25) 40px, rgba(226,218,215,0.3) 40px, rgba(226,218,215,0.3) 50px, rgba(226,218,215,0.75) 50px, rgba(226,218,215,0.75) 60px, rgba(226,218,215,0.2) 60px, rgba(226,218,215,0.2) 70px, transparent 70px, transparent 80px), radial-gradient(at top left, transparent 0, transparent 10px, rgba(226,218,215,0.2) 10px, rgba(226,218,215,0.2) 20px, rgba(226,218,215,0.75) 20px, rgba(226,218,215,0.75) 30px, rgba(226,218,215,0.3) 30px, rgba(226,218,215,0.3) 40px, rgba(226,218,215,0.25) 40px, rgba(226,218,215,0.25) 50px, rgba(226,218,215,0.75) 50px, rgba(226,218,215,0.75) 60px, rgba(226,218,215,0.2) 60px, rgba(226,218,215,0.2) 70px, #e2dad7 70px, #e2dad7 80px, transparent 80px, transparent 200px);
+    background-blend-mode: multiply;
+    background-size: 80px 80px, 80px 80px;
+    background-color: #f7f5f5;
+}
+
+.name-title{
+    position: absolute;
+    left: 386px;
+    right: 324px;
+    top: 60px;
+    font-size: 29px;
+}
+
+.img-avatar{
+    position: absolute;
+    box-sizing: border-box;
+    width: 260px;
+    height: 260px;
+    left: 550px;
+    top: 210px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.avatar{
+    position: absolute;
+    width: 384px;
+    height: 384px;
+    left: 550px;
+    top: 90px;
+}
+
+.secondHalf{
+    font-size: 25px;
+    line-height: 5px;
+    text-align: center;
+    margin-top: 140px;
+}
