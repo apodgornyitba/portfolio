@@ -1,6 +1,5 @@
 import * as React from "react";
 import './Home.css'
-import {Box} from "@mui/material";
 import avatar from "../assets/Avatar.png"
 class Home extends React.Component<> {
     render() {
@@ -11,7 +10,7 @@ class Home extends React.Component<> {
                         <h1>Andres Podgorny</h1>
                     </div>
                     <div className="img-avatar"/>
-                    <img className="avatar" src={avatar}/>
+                    <img className="avatar" src={avatar} alt={"avatar"}/>
                 </div>
                 <div className="secondHalf">
                     <p>

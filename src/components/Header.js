@@ -1,20 +1,11 @@
 import * as React from "react";
 import './Header.css';
-import {AppBar, Button, Toolbar} from "@mui/material";
+import {AppBar, Toolbar} from "@mui/material";
 import {Link} from "react-router-dom";
+import {botoncito} from "./botoncito";
+
 
 class HeaderBar extends React.Component<> {
-    botoncito(str: String, link: String) {
-        return (
-            <Link to={"/" + link} style={{textDecoration: 'none'}} >
-                <Button className="Headerbutton">
-                    <h3>{str}</h3>
-                </Button>
-            </Link>
-
-        )
-    }
-
     render() {
         return (<div>
             <AppBar
@@ -34,10 +25,11 @@ class HeaderBar extends React.Component<> {
                     <div
                         className="Header-Menu"
                     >
-                        {this.botoncito('INICIO', '')}
-                        {this.botoncito('SOBRE MI', 'About')}
-                        {this.botoncito('PROYECTOS', 'Projects')}
-                        {this.botoncito('CONTACTO', 'Contact')}
+
+                        {botoncito('INICIO', '')}
+                        {botoncito('SOBRE MI', 'About')}
+                        {botoncito('PROYECTOS', 'Projects')}
+                        {botoncito('CONTACTO', 'Contact')}
                     </div>
 
                 </Toolbar>
