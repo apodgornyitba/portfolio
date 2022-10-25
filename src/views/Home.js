@@ -1,6 +1,7 @@
 import * as React from "react";
 import './Home.css'
 import avatar from "../assets/Avatar.png"
+
 class Home extends React.Component<> {
     render() {
         return (
@@ -14,9 +15,7 @@ class Home extends React.Component<> {
                 </div>
                 <div className="secondHalf">
                     <p>
-                        Estudiante de Ing. Informática en Instituto Tecnológico de Buenos Aires (ITBA).</p>
-                    <p>
-                        Ferviente entusiasta de la programación en general.
+                        Estudiante de Ing. Informática en Instituto Tecnológico de Buenos Aires (ITBA).
                     </p>
                     <p>
                         Enfocado principalmente en Web Development, Web Apps & Desktop Application Development.
